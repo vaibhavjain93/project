@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="h" >
+	<head>
+		<script type="text/javascript" src="C:\Users\admin\Downloads\jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="C:\Users\admin\Desktop\project\jquery-ui-1.11.4.custom\jquery-ui.min.js"></script>
+		<script type="text/javascript" src="C:\Users\admin\Downloads\angular.min.js"></script>
+		<script type="text/javascript" src="C:\Users\admin\Desktop\my-new-project\node_modules\angular-ui-sortable\src\sortable.js"></script>
+		<script type="text/javascript" src="C:\Users\admin\Desktop\project\app1.js"></script>
+		<style>
+			.l, .placeholder {
+			padding: 2px;
+			width: 1000px;
+			height: 20px;
+			border: 1px solid #333;
+			background: #EEE;
+			}
+			.placeholder {
+			background: #AEF;
+			}
+				
+		</style>
+	</head>
+	<body ng-controller='hc'>
+		<div>
+			<ul ui-sortable ng-model="list">
+				<li ng-repeat="l in list" class="l">
+					{{l.title}}
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
